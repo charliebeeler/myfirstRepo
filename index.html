@@ -8,18 +8,25 @@
         <style type="text/css">
         	
         </style>
+
+
+        <script>
+        	function foo(){
+        	x = document.getElementById("num-1").value || 0;
+        	y = document.getElementById("num-2").value || 0;
+        	document.getElementById("add-sum").innerHTML = parseFloat(x) + parseFloat(y);
+
+        }
+
+
+        window.onload = setInterval(foo, 1000);
+        </script>
+
 </head>
 
     <body>
-    	<div>
-    		<ul>
-    			<li>bricks</li>
-    			<li>mortar</li>
-
-    		</ul>
-
-    	</div>
-    	
+    	<input type = "text" id = "num-1"/> + <input type = "text" id = "num-2"/>  
+    	<p id = "add-sum">here</p>
         
     </body>
 
