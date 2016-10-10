@@ -6,6 +6,15 @@
 <script type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <style type="text/css">
+            input{
+                background-color: blue;
+                color: orange;
+             }
+
+            *{
+                color: orange;
+            }
+           
         	
         </style>
 
@@ -16,6 +25,20 @@
         	y = document.getElementById("num-2").value || 0;
         	document.getElementById("add-sum").innerHTML = parseFloat(x) + parseFloat(y);
 
+            a = document.getElementById("num-3").value || 0;
+            b = document.getElementById("num-4").value || 0;
+            document.getElementById("multi-sum").innerHTML = parseFloat(a) * parseFloat(b);
+
+
+            c = document.getElementById("num-5").value || 0;
+            d = document.getElementById("num-6").value || 0;
+            document.getElementById("subtr-sum").innerHTML = parseFloat(c) - parseFloat(d);
+
+            e = document.getElementById("num-7").value || 1;
+            f = document.getElementById("num-8").value || 1;
+            document.getElementById("div-sum").innerHTML = (parseFloat(e) / parseFloat(f)).toFixed(2);
+
+
         }
 
 
@@ -25,8 +48,21 @@
 </head>
 
     <body>
+        <h3>Addition</h3>
     	<input type = "text" id = "num-1"/> + <input type = "text" id = "num-2"/>  
-    	<p id = "add-sum">here</p>
+    	<p id = "add-sum"></p><br>
+
+        <h3>Subtraction</h3>
+        <input type = "text" id = "num-5"/> - <input type = "text" id = "num-6"/>  
+        <p id = "subtr-sum"></p><br>
+
+        <h3>Multiplication</h3>
+        <input type = "text" id = "num-3"/> X <input type = "text" id = "num-4"/>  
+        <p id = "multi-sum"></p><br>
+
+        <h3>Division</h3>
+        <input type = "text" id = "num-7"/> / <input type = "text" id = "num-8"/>  
+        <p id = "div-sum"></p>
         
     </body>
 
