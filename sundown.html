@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>dodo 9</title>
+<script type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <style type="text/css">
+        #sky{
+            background: #00b3b3;
+            width: 100%;
+            height: 200px;
+             animation-name: dark ;
+            animation-duration: 5s;
+            animation-delay: .5s;
+            animation-fill-mode: both;
+        }
+        @keyframes dark{
+        from{
+            background-color: #00b3b3;
+
+        }
+        to{
+            background-color: #1a0d00;
+        }
+       }
+
+        #grass{
+            background: green;
+            width: 100%;
+            height: 250px;
+            position: relative;
+            z z-index: 1;
+        }
+
+        #roadleft{
+            background: gray;
+            width: 100%;
+            height: 65px;
+            border-style: solid;
+            border-width: 10px 0 5px 0;
+            border-color:  #666633;
+            border-bottom: dashed yellow;
+
+        }
+        #roadright{
+            background: gray;
+            width: 100%;
+            height: 65px;
+            border-style: solid;
+            border-width: 5px 0 10px 0;
+            border-color:  #666633;
+            border-top: dashed yellow;
+
+        }
+
+        #sun {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color:yellow;
+            position: relative;
+            left: 50px;
+            top: 20px;
+            
+          
+
+             animation-name: sundown ;
+            animation-duration: 5s;
+            animation-delay: .5s;
+            animation-fill-mode:forwards;
+           
+            
+        }
+         @keyframes sundown{
+        from{
+            transform: translateY(10px);
+            background-color: yellow;
+           
+        }
+        to{
+            transform: translateY(195px);
+            
+            
+        }
+       }
+
+
+        #mario{
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            left: 10px;
+            top: 550px;
+            animation-name: move ;
+            animation-duration: 5s;
+            animation-delay: .5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+
+        }
+       @keyframes move{
+        from{
+            transform: translateX(-2px);
+
+        }
+        to{
+            transform: translateX(1500px);
+        }
+       }
+       #cloud{
+        height: 100px;
+        width: 100px;
+       }
+           
+        </style>
+</head>
+
+    <body>
+        <div id = "sky">
+            <div id = "sun">
+
+            </div id = "cloud">
+                
+        </div>
+        <div id = "grass"></div>
+        <div id = "roadleft"></div>
+        <div id = "roadright">
+            <div>
+                <img id = "mario" src = "mario.png">
+
+            </div>
+        </div>
+        
+    </body>
+
+
+</html>
